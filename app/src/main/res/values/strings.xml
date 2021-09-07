@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">      MusicalStudio</string>
+    <string name="classical">Classical Album</string>
+    <string name="play_button">Play</string>
+    <string name="pause_button">Pause</string>
+    <string name="stop_button">Stop</string>
+    <string name="category_numbers">Classical Songs</string>
+    <string name="melody">MelodySongs</string>
+    <string name="hiphop">HipHop Songs</string>
+    <string name="dancesongs">Dance Songs</string>
+</resources>

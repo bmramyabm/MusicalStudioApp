@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/front" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                style="@style/Button_Style"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/classical" />
+
+            <TextView
+                android:id="@+id/classical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:autoLink="web"
+                android:text="@string/category_numbers"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                style="@style/Button_Style"
+                android:layout_toRightOf="@id/btn1"
+                android:src="@drawable/melody_9" />
+
+            <TextView
+                android:id="@+id/melody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn2"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/classical"
+                android:autoLink="web"
+                android:text="@string/melody"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                style="@style/Button_Style"
+                android:layout_below="@id/classical"
+                android:src="@drawable/dance" />
+
+            <TextView
+                android:id="@+id/hiphop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:autoLink="web"
+                android:text="@string/hiphop"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn4"
+                style="@style/Button_Style"
+                android:layout_below="@id/melody"
+                android:layout_toRightOf="@id/btn3"
+                android:src="@drawable/hiphop" />
+
+            <TextView
+                android:id="@+id/dance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn4"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/hiphop"
+                android:autoLink="web"
+                android:text="@string/dancesongs"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
